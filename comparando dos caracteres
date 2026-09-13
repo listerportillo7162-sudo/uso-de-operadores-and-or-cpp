@@ -1,0 +1,22 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string cadena1, cadena2;
+    cout << "Ingrese primera cadena: ";
+    getline(cin, cadena1);
+    cout << "Ingrese segunda cadena: ";
+    getline(cin, cadena2);
+
+    if (cadena1 == cadena2) {
+        cout << "Las cadenas son iguales";
+    } else {
+        if (cadena1 > cadena2) {
+            cout << "La cadena mayor es: " << cadena1;
+        } else {
+            cout << "La cadena mayor es: " << cadena2;
+        }
+    }
+    return 0;
+}
