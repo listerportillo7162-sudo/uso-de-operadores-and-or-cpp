@@ -1,0 +1,22 @@
+#include <iostream>
+#include <cmath> // para abs
+
+using namespace std;
+
+int main() {
+    double num1, num2;
+    double mayor, menor;
+
+    cout << "Ingrese el primer numero: ";
+    cin >> num1;
+    cout << "Ingrese el segundo numero: ";
+    cin >> num2;
+
+    // Formula sin usar estructuras selectivas
+    mayor = (num1 + num2 + abs(num1 - num2)) / 2.0;
+    menor = (num1 + num2 - abs(num1 - num2)) / 2.0;
+
+    cout << "\nEl numero MAYOR es: " << mayor << endl;
+    cout << "El numero MENOR es: " << menor << endl;
+
+    return 0;
